@@ -26,8 +26,8 @@ def apple_stock():
                 close = rows.contents[6].get_text()
                 data.append((date, close))
                 json_string = {
-                'Date': date,
-                'Close_Price': close,
+                "Date": date,
+                "Close_Price": close,
                 }
                 print(json.dumps(json_string))
         except:

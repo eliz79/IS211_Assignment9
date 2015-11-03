@@ -26,9 +26,9 @@ def NFLStats():
             touch_downs = tds.contents[6].get_text()
             team = tds.contents[2].get_text()
             json_string = {
-            'Name': player,
-            'Position': position,
-            'Touchdowns' : touch_downs, 
+            "Name": player,
+            "Position": position,
+            "Touchdowns" : touch_downs, 
             'Team' : team
             }
             print(json.dumps(json_string))
